@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'python-tester' }
 
     stages {
         stage('Set up Python environment') {
