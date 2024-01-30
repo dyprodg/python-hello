@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Einrichten einer virtuellen Umgebung
-                    sh 'python -m venv venv'
+                    sh 'python3 -m venv venv'
                     sh '. ./venv/bin/activate'
 
                     // Installieren von Abhängigkeiten aus requirements.txt
@@ -30,7 +30,7 @@ pipeline {
                 script {
                     // Aktivieren der virtuellen Umgebung und Ausführen der Hauptanwendung
                     sh '. ./venv/bin/activate'
-                    sh 'python main.py'
+                    sh 'python3 main.py'
                 }
             }
         }
