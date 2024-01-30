@@ -35,11 +35,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Bereinigen nach dem Ausführen der Pipeline
-            cleanWs()
-        }
-    }
 }
