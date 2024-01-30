@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'python-tester' }
+    agent { label 'ec2-basic' }
 
     stages {
         stage('Set up Python environment') {
